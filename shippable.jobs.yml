@@ -1,0 +1,8 @@
+jobs:
+  - name: script-1
+    type: runSh
+    steps:
+      - IN: sample-script
+      - IN: trigger-1
+      - TASK:
+        - script: IN/sample-script/sample-script/echo.sh

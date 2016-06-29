@@ -1,0 +1,5 @@
+triggers:
+  - name: trigger-1
+    type: trigger
+    pointer:
+      counter: 0

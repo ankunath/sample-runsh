@@ -1,0 +1,7 @@
+resources:
+  - name: sample-script
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shrivara-beta/sample-script
+      branch: master
