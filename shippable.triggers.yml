@@ -1,5 +1,5 @@
 triggers:
-  - name: trigger-3
+  - name: trigger-1
     type: trigger
     pointer:
-      counter: 3
+      counter: 0
