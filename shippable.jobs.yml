@@ -6,3 +6,5 @@ jobs:
       - IN: trigger-1
       - TASK:
         - script: ls
+    on_success:
+      - ohce
