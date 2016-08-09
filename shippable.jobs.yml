@@ -5,4 +5,4 @@ jobs:
       - IN: sample-script-2
       - IN: trigger-1
       - TASK:
-        - script: IN/sample-script/gitRepo/echo.sh
+        - script: ls
