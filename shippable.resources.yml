@@ -3,5 +3,5 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shrivara-beta/sample-script
+      sourceName: Bharath92/sample-script
       branch: master
