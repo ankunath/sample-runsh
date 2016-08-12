@@ -6,5 +6,7 @@ jobs:
       - IN: trigger-1
       - TASK:
         - script: ls
+        - script: echo "ran ls"
+        - script: pwd
     on_success:
       - ohce
