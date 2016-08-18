@@ -2,4 +2,4 @@ triggers:
   - name: trigger-1
     type: trigger
     version:
-      counter: 6
+      counter: 2
