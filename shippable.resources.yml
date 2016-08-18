@@ -1,5 +1,5 @@
 resources:
-  - name: sample-script-2
+  - name: sample-script-3
     type: gitRepo
     integration: github2
     pointer:
