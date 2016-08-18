@@ -1,7 +1,7 @@
 resources:
   - name: sample-script-2
     type: gitRepo
-    integration: github
+    integration: github2
     pointer:
       sourceName: Bharath92/sample-script
       branch: master
