@@ -2,7 +2,7 @@ jobs:
   - name: script-1
     type: runSh
     steps:
-      - IN: sample-script-2
+      - IN: sample-script-3
       - IN: trigger-1
       - TASK:
         - script: ls
