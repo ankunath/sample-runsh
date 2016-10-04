@@ -33,4 +33,4 @@ resources:
   - name: version-resource
     type: version
     seed:
-      versionNumber: "xyz"
+      versionName: "xyzd"
