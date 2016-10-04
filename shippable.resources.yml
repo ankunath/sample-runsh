@@ -21,3 +21,11 @@ resources:
         MONGO_API_URL: "localhost:28017"
     flags:
       - dv
+      
+  - name: dv-image
+    type: image
+    integration: docker
+    pointer:
+      sourceName: "library/nginx"
+    seed:
+      versionName: latest
