@@ -11,3 +11,11 @@ jobs:
         - script: ./IN/sample-script-3/gitRepo/echo.sh
     on_success:
       - ohce
+  - name: script-2
+    type: release
+    steps:
+      - IN: version-resource
+      - TASK: managed
+        bump: minor
+    on_success:
+      - ohce
