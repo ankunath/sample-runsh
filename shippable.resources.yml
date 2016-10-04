@@ -33,4 +33,4 @@ resources:
   - name: version-resource
     type: version
     seed:
-      versionName: "0.0.x-beta"
+      versionName: "beta"
