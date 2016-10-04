@@ -8,5 +8,6 @@ jobs:
         - script: ls
         - script: echo "ran ls 123"
         - script: pwd
+        - script: ./IN/sample-script-3/gitRepo/echo.sh
     on_success:
       - ohce
