@@ -29,3 +29,8 @@ resources:
       sourceName: "library/nginx"
     seed:
       versionName: latest
+      
+  - name: version-resource
+    type: version
+    seed:
+      versionName: "0.0.1-beta"
