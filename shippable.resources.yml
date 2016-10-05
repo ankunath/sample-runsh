@@ -48,3 +48,10 @@ resources:
       count: 1
     flags:
       - replicas
+
+  - name: slack
+    type: notification
+    integration: slack
+    pointer:
+      recipients:
+        - "#mychannel"
