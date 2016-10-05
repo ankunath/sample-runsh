@@ -45,8 +45,8 @@ jobs:
       - IN: version-resource
       - TASK: managed
   
-  - name: release-3
+  - name: release-4
     type: release
     steps:
-      - IN: version-resource
+      - IN: version-resource-2
       - TASK: managed
