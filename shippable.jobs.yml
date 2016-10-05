@@ -42,5 +42,6 @@ jobs:
   - name: release-6
     type: release
     steps:
-      - IN: version-resource
         bump: minor
+      - IN: version-resource
+    
