@@ -33,7 +33,7 @@ resources:
   - name: version-resource
     type: version
     seed:
-      versionName: "1.0.1-beta"
+      versionName: "0.0.1-beta"
       
   - name: env-test
     type: cluster
