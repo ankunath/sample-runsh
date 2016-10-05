@@ -61,3 +61,8 @@ resources:
       method: email
       recipients: 
         -  "1992bharath@gmail.com"
+        
+  - name: version-resource-2
+    type: version
+    seed:
+      versionName: "0.0.1-rc"
