@@ -17,7 +17,7 @@ jobs:
     steps:
       - IN: dv-image
         pull: false
-        versionName: latestu
+        versionName: latest
       - TASK: managed
       - IN: trigger-1
       
@@ -32,6 +32,8 @@ jobs:
     type: release
     steps:
       - IN: version-resource
-      - IN: box-scaler
+      - IN: dv-image
+        pull: false
+        versionName: latestu
       - TASK: managed
         bump: minor
