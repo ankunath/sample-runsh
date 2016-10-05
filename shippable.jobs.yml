@@ -32,6 +32,6 @@ jobs:
     type: release
     steps:
       - IN: version-resource
-      - IN: dv-test
+      - IN: dv-man-versionName
       - TASK: managed
         bump: minor
