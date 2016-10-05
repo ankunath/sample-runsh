@@ -26,7 +26,7 @@ resources:
     type: image
     integration: docker
     pointer:
-      sourceName: "library/nginx"
+      sourceName: "library/httpd"
     seed:
       versionName: latest
       
