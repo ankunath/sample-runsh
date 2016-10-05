@@ -32,9 +32,8 @@ jobs:
     type: release
     steps:
       - IN: version-resource
-      - IN: dv-image
+      - OUT: dv-image
         pull: false
         versionName: latest
-      - OUT: box-scaler
       - TASK: managed
         bump: minor
