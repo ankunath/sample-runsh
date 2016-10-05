@@ -25,6 +25,7 @@ jobs:
     type: deploy
     steps:
       - IN: dv-man-versionName
+      - IN: env-test
       - TASK: managed
 
   - name: script-2
