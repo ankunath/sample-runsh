@@ -55,3 +55,9 @@ resources:
     pointer:
       recipients:
         - "#mychannel"
+  - name: email
+    type: notification
+    pointer:
+      method: email
+      recipients: 
+        -  "1992bharath@gmail.com"
