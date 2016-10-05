@@ -19,3 +19,12 @@ jobs:
         bump: minor
     on_success:
       - ohce
+      
+  - name: dv-man-versionName
+    type: manifest
+    steps:
+      - IN: dv-image
+        pull: false
+        versionName: latest
+      - TASK: managed
+      - IN: trigger-1
