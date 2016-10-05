@@ -43,8 +43,4 @@ jobs:
     type: release
     steps:
       - IN: version-resource
-      - TASK: managed
-  
-  - name: release-4
-    type: release
-    - IN: version-resource
+        bump: minor
