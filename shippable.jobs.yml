@@ -32,6 +32,6 @@ jobs:
     type: release
     steps:
       - IN: version-resource
-      - IN: dv-params
+      - IN: box-scaler
       - TASK: managed
         bump: minor
