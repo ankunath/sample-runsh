@@ -48,4 +48,4 @@ jobs:
       - IN: version-resource
       - IN: release-1
       - TASK: managed
-        bump: minor
+        bump: major
