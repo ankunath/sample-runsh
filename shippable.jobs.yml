@@ -35,5 +35,6 @@ jobs:
       - IN: dv-image
         pull: false
         versionName: latest
+      - OUT: box-scaler
       - TASK: managed
         bump: minor
