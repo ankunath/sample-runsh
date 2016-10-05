@@ -36,12 +36,13 @@ jobs:
     type: release
     steps:
       - IN: version-resource
-      - IN: dv-man-versionName
+      
       - TASK: managed
 
   - name: release-6
     type: release
     steps:
+      - IN: dv-man-versionName
         bump: minor
       - IN: version-resource
     
