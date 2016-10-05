@@ -26,6 +26,7 @@ jobs:
     on_start:
       - NOTIFY: email
     steps:
+      - IN: env-test
       - IN: dv-man-versionName
       - TASK: managed
     on_success:
