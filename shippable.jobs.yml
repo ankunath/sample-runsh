@@ -34,5 +34,3 @@ jobs:
       - IN: version-resource
       - TASK: managed
         bump: minor
-    on_success:
-      - ohce
