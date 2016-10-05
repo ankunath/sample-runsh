@@ -34,3 +34,10 @@ resources:
     type: version
     seed:
       versionName: "1.0.1-beta"
+      
+  - name: env-test
+    type: cluster
+    integration: ecs
+    pointer:
+      sourceName : "test-aws-cluster" #name of the cluster we are deploying
+      region: "us-west-1"
