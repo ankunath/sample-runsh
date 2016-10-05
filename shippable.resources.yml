@@ -65,4 +65,4 @@ resources:
   - name: version-resource-2
     type: version
     seed:
-      versionName: "0.0.1-rc"
+      versionName: "0.0.1-beta"
