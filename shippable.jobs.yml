@@ -27,7 +27,6 @@ jobs:
       - NOTIFY: slack
     steps:
       - IN: dv-man-versionName
-      - IN: env-test
       - TASK: managed
     on_success:
       - NOTIFY: slack
