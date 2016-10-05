@@ -28,12 +28,25 @@ jobs:
       - IN: env-test
       - TASK: managed
 
-  - name: script-2
+  - name: release-1
     type: release
     steps:
       - IN: version-resource
-      - OUT: dv-image
-        pull: false
-        versionName: latest
+      - IN: dv-test
+      - TASK: managed
+        bump: minor
+        
+  - name: deploy-2
+    type: deploy
+    steps:
+      - IN: release-1
+      - IN: env-test
+      - TASK: managed
+      
+  - name: release-2
+    type: release
+    steps:
+      - IN: version-resource
+      - IN: deploy-2
       - TASK: managed
         bump: minor
