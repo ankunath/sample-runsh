@@ -22,13 +22,13 @@ jobs:
       - IN: trigger-1
       
  - name: dv-test
-    type: deploy
-    on_start:
-      - NOTIFY: slackNotification
-    steps:
-      - IN: dv-man-versionName
-      - IN: env-test
-      - TASK: managed
+   type: deploy
+   on_start:
+     - NOTIFY: slackNotification
+   steps:
+     - IN: dv-man-versionName
+     - IN: env-test
+     - TASK: managed
 
   - name: script-2
     type: release
