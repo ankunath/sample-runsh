@@ -32,6 +32,6 @@ jobs:
     type: release
     steps:
       - IN: version-resource
-      - IN: dv-image
+      - IN: dv-opts
       - TASK: managed
         bump: minor
