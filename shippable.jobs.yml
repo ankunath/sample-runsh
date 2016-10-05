@@ -34,6 +34,6 @@ jobs:
       - IN: version-resource
       - IN: dv-image
         pull: false
-        versionName: latestu
+        versionName: latest
       - TASK: managed
         bump: minor
