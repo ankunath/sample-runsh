@@ -23,16 +23,14 @@ jobs:
       
   - name: dv-test
     type: deploy
-    on_start:
-      - NOTIFY: email
     steps:
       - IN: env-test
       - IN: dv-man-versionName
       - TASK: managed
     on_success:
-      - NOTIFY: email
+      - script: echo 'success'
     on_failure:
-      - NOTIFY: email
+      - script: echo 'fail'
 
   - name: release-1
     type: release
