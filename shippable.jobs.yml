@@ -11,16 +11,7 @@ jobs:
         - script: ./IN/sample-script-3/gitRepo/echo.sh
     on_success:
       - ohce
-  - name: script-2
-    type: release
-    steps:
-      - IN: version-resource
-      - IN: dv-test
-      - TASK: managed
-        bump: minor
-    on_success:
-      - ohce
-      
+  
   - name: dv-man-versionName
     type: manifest
     steps:
@@ -38,3 +29,13 @@ jobs:
       - IN: dv-man-versionName
       - IN: env-test
       - TASK: managed
+
+  - name: script-2
+    type: release
+    steps:
+      - IN: version-resource
+      - IN: dv-test
+      - TASK: managed
+        bump: minor
+    on_success:
+      - ohce
