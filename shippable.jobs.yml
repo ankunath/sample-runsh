@@ -39,7 +39,7 @@ jobs:
       - IN: dv-man-versionName
       - TASK: managed
 
-  - name: release-2
+  - name: release-6
     type: release
     steps:
       - IN: version-resource
