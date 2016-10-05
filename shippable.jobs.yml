@@ -32,21 +32,14 @@ jobs:
     type: release
     steps:
       - IN: version-resource
-      - IN: dv-test
+      - IN: dv-man-versionName
       - TASK: managed
         bump: minor
         
-  - name: deploy-2
-    type: deploy
-    steps:
-      - IN: release-1
-      - IN: env-test
-      - TASK: managed
-      
   - name: release-2
     type: release
     steps:
       - IN: version-resource
-      - IN: deploy-2
+      - IN: release-1
       - TASK: managed
         bump: minor
