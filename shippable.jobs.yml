@@ -24,14 +24,14 @@ jobs:
   - name: dv-test
     type: deploy
     on_start:
-      - NOTIFY: slack
+      - NOTIFY: email
     steps:
       - IN: dv-man-versionName
       - TASK: managed
     on_success:
-      - NOTIFY: slack
+      - NOTIFY: email
     on_failure:
-      - NOTIFY: slack
+      - NOTIFY: email
 
   - name: release-1
     type: release
