@@ -15,6 +15,7 @@ jobs:
     type: release
     steps:
       - IN: version-resource
+      - IN: dv-test
       - TASK: managed
         bump: minor
     on_success:
@@ -28,3 +29,12 @@ jobs:
         versionName: latest
       - TASK: managed
       - IN: trigger-1
+      
+ - name: dv-test
+    type: deploy
+    on_start:
+      - NOTIFY: slackNotification
+    steps:
+      - IN: dv-man-versionName
+      - IN: env-test
+      - TASK: managed
