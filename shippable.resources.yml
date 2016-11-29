@@ -5,3 +5,9 @@ resources:
     pointer:
       sourceName: Bharath92/sample-script
       branch: master
+  - name: notification-slack
+    type: notification
+    integration: slack
+    pointer:
+      recipients:
+        - "#test_interns"
