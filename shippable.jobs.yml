@@ -9,5 +9,5 @@ jobs:
         - script: echo "ran ls 1234"
         - script: pwd
     on_success:
-      - ohce
+      - NOTIFY: notification-slack
   
