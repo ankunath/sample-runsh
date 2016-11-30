@@ -3,7 +3,7 @@ resources:
     type: gitRepo
     integration: git
     pointer:
-      sourceName: ankunath/sample-script
+      sourceName: BharathShippable/sample-script
       branch: master
   - name: notification-slack
     type: notification
